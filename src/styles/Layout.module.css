@@ -1,0 +1,157 @@
+
+.main h1{
+
+    text-align: center;
+    margin-top: 150px;
+    font-size: 40px;
+
+}
+.containerInserir{
+    display: flex;
+    width: 60%;
+    margin: auto auto;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.containerInserir input{
+    width: 70%;
+    font-size: 2rem;
+    padding: 10px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    text-align: right;
+    background: white;
+
+
+}
+
+.containerInserir button{
+    width: 30%;
+    font-size: 2rem;
+    padding: 10px;
+    border: solid 2px green;
+    background: green;
+    color: white;
+    border-radius: 5px;
+    height: 100%;
+    
+    
+    
+
+}
+
+.containerDeletar{
+    
+    
+    
+    margin-top: 20px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 30px;
+    
+    
+
+    
+    
+    
+}
+
+
+
+.containerDeletar button{
+    
+    width: 30%;
+    font-size: 2rem;
+    padding: 10px;
+    border: solid 2px red;
+    background: red;
+    color: white;
+    border-radius: 5px;
+    height: 100%;
+    
+    
+
+}
+.containerDeletar  .tarefa{
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    font-size: 2rem;
+    padding: 10px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    text-align: right;
+    background: white;
+}
+
+.containerDeletar  .marker{
+    
+    width: 5%;
+    font-size: 2rem;
+    padding: 10px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    text-align: right;
+    background: white;
+}
+
+.testeClassName{
+    background: red;
+}
+
+@media screen and (max-width: 700px) {
+    .containerDeletar{
+       width: 90%;
+       font-size: .8rem;
+    }
+
+    .containerInserir{
+        display: block;
+        width: 90%;
+    }
+    .containerInserir input{
+        font-size: .8rem;
+        width: 100%;
+        padding: 5px;
+        
+    }
+
+    .containerInserir button{
+        font-size: .8rem;
+        padding: 5px;
+        width: 20%;
+        display: block;
+        margin: auto auto;
+    }
+    
+    .containerDeletar{
+        display: block;
+        width: 90%;
+    }
+    .containerDeletar .tarefa{
+        font-size: .8rem;
+        width: 100%;
+        padding: 5px;
+        
+    }
+
+    .containerDeletar button{
+        font-size: .8rem;
+        padding: 5px;
+        width: 20%;
+        display: block;
+        margin: auto auto;
+    }
+    .containerDeletar input{
+       
+        padding: 5px;
+        width: 20%;
+        display: block;
+        margin: auto auto;
+    }
+    
+
+    
+}
