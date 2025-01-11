@@ -1,5 +1,6 @@
 
 import styles from "../src/styles/Layout.module.css"
+import { Html, Head, Main, NextScript } from "next/document";
 import Card from "./Card"
 import { useRef } from 'react'; 
 import { useEffect } from 'react';
