@@ -72,19 +72,20 @@ export default function Layout() {
                 if (inputRef.current.value.trim() == ""  || !inputRef.current) {
                     confirm("Digite uma Tarefa.")
                 } else {
-
+                    setJ((prevJ) => prevJ + 1);
                     const newCard = {
-                        id: j+1,
+                        id: j,
                         idInput: `input${j+1}`,
                         idCheckbox: `checkbox${j+1}`,
-                        inputValue:inputValue.value
+                        inputValue:inputRef.current.value
                     } 
                  
                     setCard((prevCards) => [...prevCards, newCard]);
-                    setJ((prevJ) => prevJ + 1);
+                    
                     
                     
                     inputRef.current.value = "";
+                    inputRef.current.focus();
 
               /*     const tarefa = `
                 <div id="${j}"><input id="checkbox${j}" type="checkbox" onClick="tarefaExecutada('input${j}','checkbox${j}')"/><input value="${inputValue.value}" id="input${j}" placeholder="Digite aqui sua tarefa" type="text" disabled="true" />
@@ -178,24 +179,28 @@ export default function Layout() {
     
     
 
-    const handleClick = () => {
+   
+    
+       const handleClick= () => {
         
         const inputValue = document.getElementById("input");
         if (inputRef.current.value.trim() == "" || !inputRef.current) {
             confirm("Digite uma Tarefa.")
         } else {
+            setJ((prevJ) => prevJ + 1);
             const newCard = {
                 id: j,
                 idInput: `input${j}`,
                 idCheckbox: `checkbox${j}`,
-                inputValue:inputValue.value
+                inputValue:inputRef.current.value
             } 
          
             setCard((prevCards) => [...prevCards, newCard]);
-            setJ((prevJ) => prevJ + 1);
+            
                     
             
             inputRef.current.value = "";
+            inputRef.current.focus();
            /*const tarefa = `
                 <div id="${j}" ><input id="checkbox${j}" type="checkbox" onClick="tarefaExecutada('input${j}','checkbox${j}')"/><input value="${inputValue.value}" id="input${j}" placeholder="Digite aqui sua tarefa" type="text" disabled="true" />
                 <button onClick="disabledDelete(${j})">Deletar</button></div>

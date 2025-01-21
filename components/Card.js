@@ -49,7 +49,7 @@ export default function Card({ id, tarefa, idCheckbox, idInput, setCard,card}) {
 
     return (
        <>
-            <div className={styles.containerDeletar} ref={containerRef} key={id}><input className={styles.marker} type="checkbox" id={idCheckbox} onClick={() => tarefaExecutada(idInput, idCheckbox)} ref={boxRef} /><div className={styles.tarefa} type="text" value={tarefa} id={idInput} ref={tarefaRef} >{tarefa}</div> <button onClick={() => deletar(id)}>Deletar</button> </div >
+            <div className={styles.containerDeletar} ref={containerRef} key={id} id={id}><input className={styles.marker} type="checkbox" id={idCheckbox} onClick={() => tarefaExecutada(idInput, idCheckbox)} ref={boxRef} /><div className={styles.tarefa} type="text" value={tarefa} id={idInput} ref={tarefaRef} >{tarefa}</div> <button onClick={() => deletar(id)}>Deletar</button> </div >
         </>
         
       
